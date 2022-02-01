@@ -15,6 +15,7 @@ cashierScoreBtn2 = document.getElementById('cashier-2')
 cashierScoreBtn3 = document.getElementById('cashier-3')
 cashierScoreBtn4 = document.getElementById('cashier-4')
 
+//create a list of iterable cashier score buttons to be accessed via a for loop to give event listeners
 const cashierBtnList = [
     cashierScoreBtn1, 
     cashierScoreBtn2, 
@@ -22,6 +23,7 @@ const cashierBtnList = [
     cashierScoreBtn4
 ]
 
+//this list of button values is agnostic re: cashier/overall score, since both are 1-4 ratinigs, and thus can be referenced by both the cashier loop and overall loop
 const buttonsValues = [
     1,
     2,
@@ -44,6 +46,7 @@ overallScoreBtn2 = document.getElementById('overall-2')
 overallScoreBtn3 = document.getElementById('overall-3')
 overallScoreBtn4 = document.getElementById('overall-4')
 
+//create a list of iterable overall score buttons to be accessed via a for loop to give event listeners
 const overallBtnList = [
     overallScoreBtn1,
     overallScoreBtn2,
@@ -65,8 +68,8 @@ let showHide = document.getElementById('show-hide')
 showHide.addEventListener('click', function(e){
     let scoresDiv = document.getElementById('show-scores')
 
-    cashierScore.textContent = cashier
-    overallScore.textContent = overall
+    cashierScore.textContent = cashier //variable cashier as calculated by the above loop
+    overallScore.textContent = overall //variable overall as calculated by the above loop
     
     let btnText = showHide.textContent
     if(btnText == 'Display Ratings') {
