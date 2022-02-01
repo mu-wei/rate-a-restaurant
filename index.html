@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Restaurant Rating</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+	<img src="assets/waitress.jpg" id="cashier">
+	<p>Please rate your experience with your cashier today</p>
+	<button type="button" id="cashier-1">1</button>
+	<button type="button" id="cashier-2">2</button>
+	<button type="button" id="cashier-3">3</button>
+	<button type="button" id="cashier-4">4</button>
+
+	<p>Please rate your overall experience today</p>
+	<button type="button" id="overall-1">1</button>
+	<button type="button" id="overall-2">2</button>
+	<button type="button" id="overall-3">3</button>
+	<button type="button" id="overall-4">4</button>
+
+	<br/>
+	<button type="button" id="show-hide">Display Ratings</button>
+	<div id="show-scores" style="display:none">
+	  <p>The average cashier rating is <span id="cashierScore">0</span></p>
+	  <p>The average overall rating is <span id="overallScore">0</span>.</p>
+	</div>
+	
+	<script src="script.js"></script>
+  </body>
+</html>
